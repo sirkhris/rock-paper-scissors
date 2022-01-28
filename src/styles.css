@@ -1,0 +1,90 @@
+/* CSS reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*------------------*/
+
+.main {
+  background: linear-gradient(90deg, blue, red);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  color: #7FFF7F;
+
+  padding-top: 5rem;
+}
+
+.display {
+  color: #7FFF7F;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  margin: 10rem;
+  gap: 50rem;
+}
+
+.ticker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-options {
+  margin-bottom: 16rem;
+}
+
+.options {
+  padding: 2rem 5rem;
+  margin: 4.56rem;
+
+  border: 0.1rem black solid;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: all .25s;
+}
+
+.options:active,
+.options:hover {
+  background-color: pink;
+  color: #7FFF7F;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  position: absolute;
+  top: 95%;
+}
